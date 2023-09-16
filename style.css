@@ -9,29 +9,30 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid rgb(55, 53, 47);
-    margin: 1em 0;
+    margin: 0.5em 0;
     padding: 0;
 }
 
 .title-container{
     overflow: auto;
+    display: inline-block;
+    margin: auto auto 0px auto;
 }
 
 .title-container img {
     float: left;
     height: 35px;
     width: auto;
-    margin: 5px 15px 5px auto;
+    margin: 5px 15px 0px auto;
 }
 
 .title-container h1 {
     float: left;
-    margin: auto auto 5px auto;
+    margin: auto auto 0px auto;
 }
 
 header > p {
-    display: inline-block;
-    margin: auto auto auto 45px;
+    margin: 0px auto auto 45px;
 }
 
 nav {
@@ -42,7 +43,7 @@ nav {
 nav > a {
     color: inherit;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 nav > a:hover {
