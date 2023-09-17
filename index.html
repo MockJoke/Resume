@@ -1,125 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parva's Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            segoe: ["Segoe UI"],
+            serif: ["DM Sans", "serif"],
+          },
+
+          extend: {
+            colors: {
+              "mainbg-color": "rgb(251, 251, 250)",
+              "font-color": "rgb(55, 53, 47)",
+              "hover-color": "rgb(108, 117, 125)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-mainbgcolor text-font-color font-segoe p-2.5">
     <header>
-        <div class="title-container">
-            <img src="images/profile-icon.png" alt="profile-icon">
-            <h1>Parva</h1>
-        </div>
-        <nav>
-            <a href="mailto:parvahdesai10@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/parvadesai/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/MockJoke" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
-        </nav>
-        <p>Observer, Creator</p>
+      <div class="inline-block">
+        <img
+          class="float-left h-10 pr-3"
+          src="images/profile-icon.png"
+          alt="profile-icon"
+        />
+        <h1 class="float-left text-4xl font-bold">Parva</h1>
+      </div>
+      <nav class="float-right text-3xl">
+        <a
+          class="hover:text-hover-color"
+          href="mailto:parvahdesai10@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a
+          class="hover:text-hover-color"
+          href="https://www.linkedin.com/in/parvadesai/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          class="hover:text-hover-color"
+          href="https://github.com/MockJoke"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </nav>
+      <p class="pl-11">Observer, Creator</p>
     </header>
-    <hr>
+    <hr class="border-solid border-1 border-font-color mt-1.5" />
     <section>
-        <h2 class="section-title">Skills</h2>
-        <ul>
-            <li><span class="skill-tags">Programming Languages:</span> C, C++, C#, Java</li>
-            <li><span class="skill-tags">Game Engines:</span> Unity, Unreal</li>
-            <li><span class="skill-tags">Version Control & Project Management Tools:</span> Git, Github, Sourcetree, Bitbucket, Jira</li>
-            <li><span class="skill-tags">Frontend-WebDevelopment:</span> HTML, CSS, JavaScript</li>
-            <li><span class="skill-tags">Backend-WebDevelopment:</span> SQL, PHP, PostgreSQL</li>
-        </ul>
-    </section>
-    <section>
-    <h2 class="section-title">Summary</h2>
-    <p>I love observing & creating experiences by blending the artsy side of my right brain and the engineering side of my left brain. Currently I'm learning & working in the Game & Web domains.</p>
-    </section>
-    <section>
-        <h2 class="section-title">Work Experience</h2>
-        <h3>Game Programmer, Black March Studios (Full Time, Aug 2022 - Aug 2023)</h3>
-        <ul>
-            <li>Worked on a 3D tactical role playing game</li>
-            <li>Resoponsible for whole game's UI/UX</li>
-            <li>Implemeted a complex shop and inventory system</li>
-            <li>Built a guild and stable system</li>
-            <li>Maintained a dynamic archive system</li>
-        </ul>
-        <h3>Game Programmer, UnderDOGS Studio LLP (Full Time, Jan 2022 - Aug 2022)</h3>
-        <ul>
-            <li>Worked on a 2D mobile game in Unity</li>
-            <li>Implemented game mechanics, UI/UX and animations</li>
-            <li>Worked closely with lead game designer and a team of artists</li>
-        </ul>
-        <h3>Game Programmer, Outscal (Apprenticeship, Sep 2021 - April 2022)</h3>
-        <ul>
-            <li>Learned about industry standards and practices</li>
-            <li>Worked on advanced 2D & 3D game projects</li>
-            <li>Got familiar with advanced data structures and design patterns</li>
-        </ul>
-        <h3>Game Programmer, Creative Multimedia (Internship, Jul 2020 - Jul 2021)</h3>
-        <ul>
-            <li>Worked on multiple 2D hypercasual games in Unity</li>
-            <li>Implemented prototypes with core game mechanics for 3D games in Unity</li>
-        </ul>
-    </section>
-    <section class="project-section">
-        <h2 class="section-title">Projects</h2>
-        <h3>Crimson Tactics:</h3>
-        <a href="https://store.steampowered.com/app/1480810/Crimson_Tactics_The_Rise_of_The_White_Banner/" target="_blank" rel="noopener noreferrer">Project Link</a>
-        <ul>
-            <li>Resoponsible for whole game's UI/UX</li>
-            <li>Implemeted a complex shop and inventory system</li>
-            <li>Built a guild and stable system</li>
-            <li>Maintained a dynamic archive system</li>
-        </ul>
-        <h3>StoryPix:</h3>
-        <a href="https://storypix.in/" target="_blank" rel="noopener noreferrer">Project Link</a>
-        <ul>
-            <li>Worked on a 2D mobile game in Unity</li>
-            <li>Implemented game mechanics, UI/UX and animations</li>
-            <li>Worked closely with lead game designer and a team of artists</li>
-        </ul>
-        <h3>2D Platformer:</h3>
-        <a href="https://github.com/MockJoke/2D-Platformer-Game" target="_blank" rel="noopener noreferrer">Project Link</a>
-        <ul>
-            <li>Use of Singleton Design Pattern in overall code architecture for better accessibility and structure</li>
-            <li>Basic enemy AI for patrolling with Different states</li>
-            <li>Responsive UI for player health, collectibles, gameplay buttons with sound for different actions</li>
-        </ul>
-        <h3>Pictoword:</h3>
-        <a href="https://github.com/MockJoke/PictoWord" target="_blank" rel="noopener noreferrer">Project Link</a>
-        <ul>
-            <li>A picture-word puzzle game with database management through MySQL</li>
-            <li>Locked-Unlocked level UI with responsive score UI</li>
-        </ul>
-        <h3>TicTacToe:</h3>
-        <a href="https://github.com/MockJoke/MultiPlayer_TicTacToe" target="_blank" rel="noopener noreferrer">Project Link</a>
-        <ul>
-            <li>A Multiplayer game made by using unity's PUN plugin</li>
-        </ul>
+      <h2 class="text-2xl font-bold underline my-3">Skills</h2>
+      <ul class="list-inside list-disc pl-5">
+        <li>
+          <span class="font-bold">Programming Languages:</span> C, C++, C#, Java
+        </li>
+        <li><span class="font-bold">Game Engines:</span> Unity, Unreal</li>
+        <li>
+          <span class="font-bold"
+            >Version Control & Project Management Tools:</span
+          >
+          Git, Github, Sourcetree, Bitbucket, Jira
+        </li>
+        <li>
+          <span class="font-bold">Frontend-WebDevelopment:</span> HTML, CSS,
+          JavaScript
+        </li>
+        <li>
+          <span class="font-bold">Backend-WebDevelopment:</span> SQL, PHP,
+          PostgreSQL
+        </li>
+      </ul>
     </section>
     <section>
-        <h2 class="section-title">Education</h2>
-        <h3>B.tech in Electronics and Communication Engineering (Jul 2018 - Jul 2022)</h3>
-        <p>Indian Institute of Information Technology Surat</p>
+      <h2 class="text-2xl font-bold underline my-3">Summary</h2>
+      <p>
+        I love observing & creating experiences by blending the artsy side of my
+        right brain and the engineering side of my left brain. Currently I'm
+        learning & working in the Game & Web domains.
+      </p>
     </section>
     <section>
-        <h2 class="section-title">Achievements</h2>
-        <ul>
-            <li>AIR 91 in Technothlon organized by IIT-Kharagpur.</li>
-            <li>Runner up in a state level poster making competition organized by ISRO Ahmadabad.</li>
-            <li>Handball champion in Khel Mahakumbh at district level Surat, part of college football team.</li>
-            <li>Singing champion in a district level competition.</li>
-        </ul>
+      <h2 class="text-2xl font-bold underline my-3">Work Experience</h2>
+      <h3 class="text-xl font-bold mt-1.5">
+        Game Programmer, Black March Studios (Full Time, Aug 2022 - Aug 2023)
+      </h3>
+      <ul class="list-inside list-disc pl-5">
+        <li>Worked on a 3D tactical role playing game</li>
+        <li>Resoponsible for whole game's UI/UX</li>
+        <li>Implemeted a complex shop and inventory system</li>
+        <li>Built a guild and stable system</li>
+        <li>Maintained a dynamic archive system</li>
+      </ul>
+      <h3 class="text-xl font-bold mt-1.5">
+        Game Programmer, UnderDOGS Studio LLP (Full Time, Jan 2022 - Aug 2022)
+      </h3>
+      <ul class="list-inside list-disc pl-5">
+        <li>Worked on a 2D mobile game in Unity</li>
+        <li>Implemented game mechanics, UI/UX and animations</li>
+        <li>Worked closely with lead game designer and a team of artists</li>
+      </ul>
+      <h3 class="text-xl font-bold mt-1.5">
+        Game Programmer, Outscal (Apprenticeship, Sep 2021 - April 2022)
+      </h3>
+      <ul class="list-inside list-disc pl-5">
+        <li>Learned about industry standards and practices</li>
+        <li>Worked on advanced 2D & 3D game projects</li>
+        <li>Got familiar with advanced data structures and design patterns</li>
+      </ul>
+      <h3 class="text-xl font-bold mt-1.5">
+        Game Programmer, Creative Multimedia (Internship, Jul 2020 - Jul 2021)
+      </h3>
+      <ul class="list-inside list-disc pl-5">
+        <li>Worked on multiple 2D hypercasual games in Unity</li>
+        <li>
+          Implemented prototypes with core game mechanics for 3D games in Unity
+        </li>
+      </ul>
     </section>
-    <hr>
+    <section>
+      <h2 class="text-2xl font-bold underline my-3">Projects</h2>
+      <h3 class="inline-block text-xl font-bold">Crimson Tactics:</h3>
+      <a
+        class="underline pl-10 hover:text-hover-color"
+        href="https://store.steampowered.com/app/1480810/Crimson_Tactics_The_Rise_of_The_White_Banner/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Project Link</a
+      >
+      <ul class="list-inside list-disc pl-5">
+        <li>Resoponsible for whole game's UI/UX</li>
+        <li>Implemeted a complex shop and inventory system</li>
+        <li>Built a guild and stable system</li>
+        <li>Maintained a dynamic archive system</li>
+      </ul>
+      <h3 class="inline-block text-xl font-bold mt-1.5">StoryPix:</h3>
+      <a
+        class="underline pl-10 hover:text-hover-color"
+        href="https://storypix.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Project Link</a
+      >
+      <ul class="list-inside list-disc pl-5">
+        <li>Worked on a 2D mobile game in Unity</li>
+        <li>Implemented game mechanics, UI/UX and animations</li>
+        <li>Worked closely with lead game designer and a team of artists</li>
+      </ul>
+      <h3 class="inline-block text-xl font-bold mt-1.5">2D Platformer:</h3>
+      <a
+        class="underline pl-10 hover:text-hover-color"
+        href="https://github.com/MockJoke/2D-Platformer-Game"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Project Link</a
+      >
+      <ul class="list-inside list-disc pl-5">
+        <li>
+          Use of Singleton Design Pattern in overall code architecture for
+          better accessibility and structure
+        </li>
+        <li>Basic enemy AI for patrolling with Different states</li>
+        <li>
+          Responsive UI for player health, collectibles, gameplay buttons with
+          sound for different actions
+        </li>
+      </ul>
+      <h3 class="inline-block text-xl font-bold mt-1.5">Pictoword:</h3>
+      <a
+        class="underline pl-10 hover:text-hover-color"
+        href="https://github.com/MockJoke/PictoWord"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Project Link</a
+      >
+      <ul class="list-inside list-disc pl-5">
+        <li>
+          A picture-word puzzle game with database management through MySQL
+        </li>
+        <li>Locked-Unlocked level UI with responsive score UI</li>
+      </ul>
+      <h3 class="inline-block text-xl font-bold mt-1.5">TicTacToe:</h3>
+      <a
+        class="underline pl-10 hover:text-hover-color"
+        href="https://github.com/MockJoke/MultiPlayer_TicTacToe"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Project Link</a
+      >
+      <ul class="list-inside list-disc pl-5">
+        <li>A Multiplayer game made by using unity's PUN plugin</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="text-2xl font-bold underline my-3">Education</h2>
+      <h3 class="text-xl font-bold">
+        B.tech in Electronics and Communication Engineering (Jul 2018 - Jul
+        2022)
+      </h3>
+      <p>Indian Institute of Information Technology Surat</p>
+    </section>
+    <section>
+      <h2 class="text-2xl font-bold underline my-3">Achievements</h2>
+      <ul class="list-inside list-disc pl-5">
+        <li>AIR 91 in Technothlon organized by IIT-Kharagpur.</li>
+        <li>
+          Runner up in a state level poster making competition organized by ISRO
+          Ahmadabad.
+        </li>
+        <li>
+          Handball champion in Khel Mahakumbh at district level Surat, part of
+          college football team.
+        </li>
+        <li>Singing champion in a district level competition.</li>
+      </ul>
+    </section>
+    <hr class="border-solid border-1 border-font-color mt-1.5" />
     <!-- <form>
         <h2>Contact Me</h2>
         <h3>Name:</h3>
@@ -131,5 +245,5 @@
         <br><br>
         <button type="submit">Submit</button>
     </form> -->
-</body>
+  </body>
 </html>
