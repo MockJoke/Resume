@@ -7,13 +7,14 @@ module.exports = {
       serif: ["DM Sans", "serif"],
     },
     
+    colors: {
+      "mainbg-color": "rgb(251, 251, 250)",
+      "font-color": "rgb(55, 53, 47)",
+      "link-color": "rgb(232, 28, 79)",
+      "hover-color": "rgb(108, 117, 125)",
+    },
+
     extend: {
-      colors: {
-        "mainbg-color": "rgb(251, 251, 250)",
-        "font-color": "rgb(55, 53, 47)",
-        "link-color": "rgb(232, 28, 79)",
-        "hover-color": "rgb(108, 117, 125)",
-      },
     },
   },
   plugins: [],
