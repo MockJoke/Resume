@@ -8,19 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-mainbgcolor text-font-color font-segoe p-2.5">
-    <header>
-      <div class="inline-block">
-        <img
-          class="float-left h-10 pr-3"
-          src="/images/profile-icon.png"
-          alt="profile-icon"
-        />
-        <h1 class="float-left text-4xl font-bold">Parva</h1>
+  <body class="bg-mainbg-color text-font-color font-segoe p-3 md:py-5 md:px-72">
+    <header class="flex flex-row">
+      <img
+        class="h-16 pr-2"
+        src="/images/profile-icon.png"
+        alt="profile-icon"
+      />
+      <div class="flex flex-col grow">
+        <h1 class="text-4xl font-bold">Parva</h1>
+        <p class="font-medium">Observer, Creator</p>
       </div>
-      <nav class="float-right text-3xl">
+      <nav class="text-3xl">
         <a
           class="hover:text-hover-color"
           href="mailto:parvahdesai10@gmail.com"
@@ -46,72 +47,79 @@
           <i class="fab fa-github"></i>
         </a>
       </nav>
-      <p class="pl-11">Observer, Creator</p>
     </header>
     <hr class="border-solid border-1 border-font-color mt-1.5" />
     <section>
       <h2 class="text-2xl font-bold underline my-3">Skills</h2>
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>
-          <span class="font-bold">Programming Languages:</span> C, C++, C#, Java
+          <span class="font-bold">Programming Languages:</span>
+          C, C++, C#, Java
         </li>
-        <li><span class="font-bold">Game Engines:</span> Unity, Unreal</li>
+        <li>
+          <span class="font-bold">Game Engines:</span>
+          Unity, Unreal
+        </li>
         <li>
           <span class="font-bold"
-            >Version Control & Project Management Tools:</span
+            >Version Control & Project Management:</span
           >
           Git, Github, Sourcetree, Bitbucket, Jira
         </li>
         <li>
-          <span class="font-bold">Frontend-WebDevelopment:</span> HTML, CSS,
-          JavaScript
+          <span class="font-bold">Frontend-WebDevelopment:</span>
+          HTML, CSS, TailwindCSS, JavaScript, Figma
         </li>
         <li>
-          <span class="font-bold">Backend-WebDevelopment:</span> SQL, PHP,
-          PostgreSQL
+          <span class="font-bold">Backend-WebDevelopment:</span>
+          SQL, PHP, PostgreSQL
         </li>
       </ul>
     </section>
     <section>
       <h2 class="text-2xl font-bold underline my-3">Summary</h2>
       <p>
-        I love observing & creating experiences by blending the artsy side of my
+        I love observing the experiencer & creating experiences by blending the artsy side of my
         right brain and the engineering side of my left brain. Currently I'm
         learning & working in the Game & Web domains.
       </p>
     </section>
     <section>
       <h2 class="text-2xl font-bold underline my-3">Work Experience</h2>
-      <h3 class="text-xl font-bold mt-1.5">
-        Game Programmer, Black March Studios (Full Time, Aug 2022 - Aug 2023)
-      </h3>
-      <ul class="list-inside list-disc pl-5">
+      <div class="flex flex-col md:flex-row">
+        <h3 class="text-xl font-bold mt-1.5">Game Programmer, Black March Studios</h3>
+        <p class="font-semibold md:self-end md:pl-3">(Full Time, Aug 2022 - Aug 2023)</p>
+      </div>
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Worked on a 3D tactical role playing game</li>
         <li>Resoponsible for whole game's UI/UX</li>
         <li>Implemeted a complex shop and inventory system</li>
         <li>Built a guild and stable system</li>
         <li>Maintained a dynamic archive system</li>
       </ul>
-      <h3 class="text-xl font-bold mt-1.5">
-        Game Programmer, UnderDOGS Studio LLP (Full Time, Jan 2022 - Aug 2022)
-      </h3>
-      <ul class="list-inside list-disc pl-5">
+      <div class="flex flex-col md:flex-row">
+        <h3 class="text-xl font-bold mt-1.5">Game Programmer, UnderDOGS Studio</h3>
+        <p class="font-semibold md:self-end md:pl-3">(Full Time, Jan 2022 - Aug 2022)</p>
+      </div>
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Worked on a 2D mobile game in Unity</li>
         <li>Implemented game mechanics, UI/UX and animations</li>
         <li>Worked closely with lead game designer and a team of artists</li>
       </ul>
-      <h3 class="text-xl font-bold mt-1.5">
-        Game Programmer, Outscal (Apprenticeship, Sep 2021 - April 2022)
-      </h3>
-      <ul class="list-inside list-disc pl-5">
+      <div class="flex flex-col md:flex-row">
+        <h3 class="text-xl font-bold mt-1.5">Game Programmer, Outscal</h3>
+        <p class="font-semibold md:self-end md:pl-3">(Apprenticeship, Sep 2021 - April 2022)</p>
+      </div>
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Learned about industry standards and practices</li>
         <li>Worked on advanced 2D & 3D game projects</li>
         <li>Got familiar with advanced data structures and design patterns</li>
       </ul>
-      <h3 class="text-xl font-bold mt-1.5">
-        Game Programmer, Creative Multimedia (Internship, Jul 2020 - Jul 2021)
-      </h3>
-      <ul class="list-inside list-disc pl-5">
+      <div class="flex flex-col md:flex-row">
+        <h3 class="text-xl font-bold mt-1.5">Game Programmer, Creative Multimedia</h3>
+        <p class="font-semibold md:self-end md:pl-3">(Internship, Jul 2020 - Jul 2021)</p>
+      </div>
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Worked on multiple 2D hypercasual games in Unity</li>
         <li>
           Implemented prototypes with core game mechanics for 3D games in Unity
@@ -122,13 +130,13 @@
       <h2 class="text-2xl font-bold underline my-3">Projects</h2>
       <h3 class="inline-block text-xl font-bold">Crimson Tactics:</h3>
       <a
-        class="underline pl-10 hover:text-hover-color"
+        class="underline pl-10 text-link-color hover:text-hover-color"
         href="https://store.steampowered.com/app/1480810/Crimson_Tactics_The_Rise_of_The_White_Banner/"
         target="_blank"
         rel="noopener noreferrer"
         >Project Link</a
       >
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Resoponsible for whole game's UI/UX</li>
         <li>Implemeted a complex shop and inventory system</li>
         <li>Built a guild and stable system</li>
@@ -136,26 +144,26 @@
       </ul>
       <h3 class="inline-block text-xl font-bold mt-1.5">StoryPix:</h3>
       <a
-        class="underline pl-10 hover:text-hover-color"
+        class="underline pl-10 text-link-color hover:text-hover-color"
         href="https://storypix.in/"
         target="_blank"
         rel="noopener noreferrer"
         >Project Link</a
       >
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>Worked on a 2D mobile game in Unity</li>
         <li>Implemented game mechanics, UI/UX and animations</li>
         <li>Worked closely with lead game designer and a team of artists</li>
       </ul>
       <h3 class="inline-block text-xl font-bold mt-1.5">2D Platformer:</h3>
       <a
-        class="underline pl-10 hover:text-hover-color"
+        class="underline pl-10 text-link-color hover:text-hover-color"
         href="https://github.com/MockJoke/2D-Platformer-Game"
         target="_blank"
         rel="noopener noreferrer"
         >Project Link</a
       >
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>
           Use of Singleton Design Pattern in overall code architecture for
           better accessibility and structure
@@ -168,13 +176,13 @@
       </ul>
       <h3 class="inline-block text-xl font-bold mt-1.5">Pictoword:</h3>
       <a
-        class="underline pl-10 hover:text-hover-color"
+        class="underline pl-10 text-link-color hover:text-hover-color"
         href="https://github.com/MockJoke/PictoWord"
         target="_blank"
         rel="noopener noreferrer"
         >Project Link</a
       >
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>
           A picture-word puzzle game with database management through MySQL
         </li>
@@ -182,27 +190,27 @@
       </ul>
       <h3 class="inline-block text-xl font-bold mt-1.5">TicTacToe:</h3>
       <a
-        class="underline pl-10 hover:text-hover-color"
+        class="underline pl-10 text-link-color hover:text-hover-color"
         href="https://github.com/MockJoke/MultiPlayer_TicTacToe"
         target="_blank"
         rel="noopener noreferrer"
         >Project Link</a
       >
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>A Multiplayer game made by using unity's PUN plugin</li>
       </ul>
     </section>
     <section>
       <h2 class="text-2xl font-bold underline my-3">Education</h2>
-      <h3 class="text-xl font-bold">
-        B.tech in Electronics and Communication Engineering (Jul 2018 - Jul
-        2022)
-      </h3>
+      <div class="flex flex-col md:flex-row">
+        <h3 class="text-xl font-bold">B.tech in Electronics and Communication Engineering</h3>
+        <p class="font-semibold md:self-end md:pl-3">(Jul 2018 - Jul 2022)</p>
+      </div>
       <p>Indian Institute of Information Technology Surat</p>
     </section>
     <section>
       <h2 class="text-2xl font-bold underline my-3">Achievements</h2>
-      <ul class="list-inside list-disc pl-5">
+      <ul class="list-outside list-disc pl-5 md:pl-8">
         <li>AIR 91 in Technothlon organized by IIT-Kharagpur.</li>
         <li>
           Runner up in a state level poster making competition organized by ISRO
