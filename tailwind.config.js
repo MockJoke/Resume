@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
+      systemui: ["system-ui", "sans-serif"],
       segoe: ["Segoe UI", "serif"],
       serif: ["DM Sans", "serif"],
     },
@@ -15,6 +16,14 @@ module.exports = {
     },
 
     extend: {
+      fontSize: {
+        "1.5xl" : "22px",
+        "2.75xl": "28px"
+      },
+
+      borderWidth: {
+        "1.5": "1.5px"
+      }
     },
   },
   plugins: [],
