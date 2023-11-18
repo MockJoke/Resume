@@ -1,3 +1,3 @@
 # Resume
 
-https://mockjoke.github.io/Resume/src/index.html
+https://mockjoke.github.io/Resume/
