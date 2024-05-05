@@ -815,6 +815,10 @@ video {
     margin-bottom: 0.375rem;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .md\:h-20 {
     height: 5rem;
   }
