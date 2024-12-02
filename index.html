@@ -39,110 +39,161 @@
   <body
     class="bg-mainbg-color dark:bg-mainbg-color-dark text-font-color dark:text-font-color-dark font-systemui m-3 md:my-5 mx-5 lg:mx-auto md:max-w-3xl"
   >
-    <header class="flex flex-row">
+    <header class="flex flex-col gap-3">
       <!-- <img
         class="h-16 md:h-20 md:pr-2"
         src="public/images/profile-icon.png"
         alt="profile-icon"
       /> -->
-
-      <div class="flex flex-col grow">
-        <h1 class="text-3xl md:text-5xl font-bold">Parva</h1>
-        <p class="font-medium md:text-lg">Observing, Creating</p>
-      </div>
-
-      <div class="flex flex-col">
-        <div
-          class="flex flex-row justify-end place-content-between mb-0.5 md:mb-3"
-        >
-          <a
-            class="underline decoration-solid font-medium text-base md:text-lg text-right text-link-color hover:no-underline"
-            href="public/docs/Parva's Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="View PDF version"
-            >PDF version</a
-          >
-
-          <div
-            class="text-font-color dark:text-font-color-dark hover:text-hover-color text-right rounded-lg text-sm pl-1 py-1"
-          >
-            <button type="button" title="switch to light theme">
-              <svg
-                class="sun w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-            </button>
-
-            <button type="button" title="switch to dark theme">
-              <svg
-                class="moon w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
+      <div class="flex flex-row">
+        <div class="flex flex-col grow">
+          <h1 class="text-3xl md:text-5xl font-bold">Parva</h1>
+          <!-- <p class="font-medium md:text-lg">Observing, Creating</p> -->
         </div>
 
-        <nav
-          class="flex flex-row justify-end space-x-1 md:space-x-4 text-lg md:text-2xl mb-0.5 md:mb-1.5"
-        >
-          <div class="space-x-0.5 md:space-x-1">
+        <div class="flex flex-col">
+          <div
+            class="flex flex-row justify-end place-content-between mb-0.5 md:mb-3"
+          >
             <a
-              class="hover:text-hover-color"
-              href="mailto:contact@parva.space"
+              class="underline decoration-solid font-medium text-base md:text-lg text-right text-link-color hover:no-underline"
+              href="public/docs/Parva's Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              title="Email"
+              title="View PDF version"
+              >PDF version</a
             >
-              <i class="fa fa-envelope"></i>
-            </a>
 
-            <a
-              class="hover:text-hover-color"
-              href="https://www.linkedin.com/in/parvadesai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
+            <div
+              class="text-font-color dark:text-font-color-dark hover:text-hover-color text-right rounded-lg text-sm pl-1 py-1"
             >
-              <i class="fab fa-linkedin"></i>
-            </a>
+              <button type="button" title="switch to light theme">
+                <svg
+                  class="sun w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                  ></path>
+                </svg>
+              </button>
 
-            <a
-              class="hover:text-hover-color"
-              href="https://github.com/parwam"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Github"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a
-              class="hover:text-hover-color"
-              href="https://portfolio.parva.space"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Portfolio"
-            >
-              <i class="fa-solid fa-briefcase"></i>
-            </a>
+              <button type="button" title="switch to dark theme">
+                <svg
+                  class="moon w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
-        </nav>
+
+          <!-- <nav
+            class="flex flex-row justify-end space-x-1 md:space-x-4 text-lg md:text-2xl mb-0.5 md:mb-1.5"
+          >
+            <div class="space-x-0.5 md:space-x-1">
+              <a
+                class="hover:text-hover-color"
+                href="mailto:contact@parva.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Email"
+              >
+                <i class="fa fa-envelope"></i>
+              </a>
+  
+              <a
+                class="hover:text-hover-color"
+                href="https://www.linkedin.com/in/parvadesai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+  
+              <a
+                class="hover:text-hover-color"
+                href="https://github.com/parwam"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+  
+              <a
+                class="hover:text-hover-color"
+                href="https://portfolio.parva.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Portfolio"
+              >
+                <i class="fa-solid fa-briefcase"></i>
+              </a>
+            </div>
+          </nav> -->
+        </div>
       </div>
+
+      <!-- <hr class="border-dashed border-1 border-font-color my-2" /> -->
+
+      <nav
+        class="flex flex-row flex-wrap justify-start gap-x-4 gap-y-1 md:gap-x-8 md:text-lg mb-0.5 md:mb-1.5"
+      >
+        <a
+          class="hover:text-hover-color"
+          href="mailto:contact@parva.space"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Email"
+        >
+          <i class="fa fa-envelope"></i>
+          contact@parva.space
+        </a>
+
+        <a
+          class="hover:text-hover-color"
+          href="https://www.linkedin.com/in/parvadesai/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+        <a
+          class="hover:text-hover-color"
+          href="https://github.com/parwam"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Github"
+        >
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+
+        <a
+          class="hover:text-hover-color"
+          href="https://portfolio.parva.space"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Portfolio"
+        >
+          <i class="fa-solid fa-briefcase"></i>
+          Portfolio
+        </a>
+      </nav>
     </header>
 
     <hr class="border-solid border-1.5 border-font-color my-3 md:my-5" />
